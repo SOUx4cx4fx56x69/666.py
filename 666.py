@@ -15,7 +15,7 @@ def inOneNumber(numbers):
    count = len(str(result))
  return int(result)
 
-def Equal(number,equal):
+def Equal(number,equal,sleeptime=0.5):
  while inOneNumber(number) == equal:
   number = str(number)
   strnga = ""
@@ -27,7 +27,7 @@ def Equal(number,equal):
   print strnga
   number = int(number)
   number = number+tmp
-  time.sleep(0.5)
+  time.sleep(sleeptime)
  return number
 
 Answer = Equal(666,9)
